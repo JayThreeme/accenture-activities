@@ -1,0 +1,14 @@
+<div class="container">
+  <div class="row">
+    <label>Username</label>
+    <input type="text" class="form-control" [(ngModel)]="username" />
+    <p [innerText]="username"></p>
+    <Button
+      class="btn btn-primary"
+      (click)="onUsername()"
+      [disabled]="isButtonEmpty()"
+      >Add Username</Button
+    >
+    <p [innerText]="createusername"></p>
+  </div>
+</div>
